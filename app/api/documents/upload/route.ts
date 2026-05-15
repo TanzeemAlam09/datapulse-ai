@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from 'next/server';
 import { sql } from '@/lib/db';
 import { getUserFromRequest } from '@/lib/auth';
 import { extractInvoiceData } from '@/lib/ocr-engine';
-// @ts-expect-error pdf-parse types
 const pdfParse = require('pdf-parse');
 
 export const runtime = 'nodejs';
